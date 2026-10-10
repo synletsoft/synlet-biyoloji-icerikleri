@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="9, 10 ve 11. sınıf biyoloji uygulamalarını Synlet arşivinde keşfedin." />
+    <title>Biyoloji Uygulamaları | Synlet</title>
+    <link rel="icon" type="image/png" href="synlet.png" />
+    <link rel="stylesheet" href="styles.css?v=20261011-2" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Biyoloji uygulamaları ana sayfa">
+          <img class="brand-logo" src="synlet.png" alt="Synlet Eğitim Teknolojileri" />
+        </a>
+      </header>
+      <main id="top">
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Biyoloji uygulama arşivi</p>
+            <h1 id="page-title">Dersi keşfet,<br /><em>uygulayarak öğren.</em></h1>
+            <p class="hero-text">9, 10 ve 11. sınıf biyoloji konularına ait etkileşimli uygulamaları tek yerde bul, seç ve hemen aç.</p>
+          </div>
+          <div class="hero-art hero-dna" aria-hidden="true">
+            <svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="dna-left" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#23b794" />
+                  <stop offset="1" stop-color="#087359" />
+                </linearGradient>
+                <linearGradient id="dna-right" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f3c47d" />
+                  <stop offset="1" stop-color="#d88650" />
+                </linearGradient>
+              </defs>
+              <circle cx="160" cy="130" r="117" fill="#e1f4e9" opacity=".55" />
+              <circle cx="160" cy="130" r="91" fill="none" stroke="#b9e5d4" stroke-width="1.5" stroke-dasharray="4 8" />
+              <g class="dna-helix">
+                <g class="dna-rungs" stroke-linecap="round" stroke-width="9">
+                  <path d="M108 39H212 M109 53H211 M110 95H210 M108 109H212 M108 151H212 M110 165H210 M109 207H211 M108 221H212" stroke="#f8d9a8" />
+                  <path d="M108 46H212 M109 102H211 M108 158H212 M109 214H211" stroke="#b5ddcb" stroke-width="5" />
+                </g>
+                <path d="M160 12C252 21 252 53 160 68S68 109 160 124S252 165 160 180S68 221 160 248" fill="none" stroke="url(#dna-left)" stroke-width="14" stroke-linecap="round" />
+                <path d="M160 12C68 21 68 53 160 68S252 109 160 124S68 165 160 180S252 221 160 248" fill="none" stroke="url(#dna-right)" stroke-width="14" stroke-linecap="round" />
+              </g>
+              <circle class="dna-particle dna-particle-one" cx="63" cy="49" r="4" fill="#168f70" opacity=".45" />
+              <circle class="dna-particle dna-particle-two" cx="264" cy="94" r="3" fill="#e4a75b" opacity=".5" />
+              <circle class="dna-particle dna-particle-three" cx="55" cy="183" r="3" fill="#e4a75b" opacity=".5" />
+              <circle class="dna-particle dna-particle-four" cx="271" cy="215" r="4" fill="#168f70" opacity=".45" />
+            </svg>
+          </div>
+        </section>
+        <section class="toolbar" aria-label="Uygulamaları filtrele">
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="sr-only">Uygulama ara</span>
+            <input id="searchInput" type="search" placeholder="Uygulama ara..." autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+          <div class="filter-group" role="group" aria-label="Sınıf seçimi">
+            <button class="filter-button is-active" type="button" data-filter="all">Tümü</button>
+            <button class="filter-button" type="button" data-filter="9">9. Sınıf</button>
+            <button class="filter-button" type="button" data-filter="10">10. Sınıf</button>
+            <button class="filter-button" type="button" data-filter="11">11. Sınıf</button>
+          </div>
+          <p class="result-count" id="resultCount"></p>
+        </section>
+        <div id="sections" class="sections"></div>
+        <section id="emptyState" class="empty-state" hidden>
+          <span class="empty-icon" aria-hidden="true">⌁</span>
+          <h2>Uygulama bulunamadı</h2>
+          <p>Arama ifadenizi veya sınıf filtresini değiştirerek tekrar deneyin.</p>
+          <button id="clearSearch" type="button">Filtreleri temizle</button>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <span>Synlet içerik arşivi</span>
+        <span>9, 10 ve 11. sınıf biyoloji</span>
+      </footer>
+    </div>
+    <script src="app.js?v=20261011"></script>
+  </body>
+</html>
